@@ -1,0 +1,558 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Form Styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], textarea, input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Pagination Styling */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    color: #007BFF;
+    margin: 0 5px;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    background-color: #ddd;
+}
+
+.pagination a.active {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Error and success messages */
+.success, .error {
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.success {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.error {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Navbar Styling */
+/* -------------------------- NAVBAR STYLING -------------------------- */
+
+/* General navbar styling */
+.navbar {
+    background-color: #333;  /* Dark background color */
+    padding: 10px 20px;      /* Padding around the navbar */
+    color: white;            /* White text color */
+    position: fixed;         /* Fixed position to keep it on top */
+    width: 100%;             /* Full width */
+    top: 0;                  /* Position at the top */
+    left: 0;                 /* Align to the left edge */
+    z-index: 1000;           /* Ensure it stays on top of other elements */
+}
+
+/* Container inside the navbar */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Navbar menu styling */
+.navbar .navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;               /* Space between menu items */
+}
+
+.navbar .navbar-menu li {
+    display: inline;
+}
+
+.navbar .navbar-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar .navbar-menu a:hover {
+    color: #4CAF50;           /* Green hover effect */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column; /* Stack the logo and menu vertically on smaller screens */
+        align-items: flex-start;
+    }
+
+    .navbar .navbar-menu {
+        flex-direction: column;  /* Stack menu items vertically */
+        gap: 10px;
+    }
+}
+
+/* -------------------------- END OF NAVBAR STYLING -------------------------- */
+
+/* Welcome Section */
+.container {
+    width: 80%;  /* Adjust the container width if needed */
+    max-width: 1200px;  /* Maximum width to prevent it from stretching too much on large screens */
+    margin: 0 auto;  /* Center the container horizontally */
+    padding: 40px 20px;  /* Add some padding for spacing */
+}
+
+/* Center the heading and paragraph */
+.container h1,
+.container p {
+    text-align: center;  /* Center the text */
+    margin: 0 auto;  /* Ensure they are centered within the container */
+}
+
+.container h1 {
+    font-size: 32px;  /* Adjust font size */
+    color: #333;  /* Text color */
+    margin-bottom: 20px;  /* Spacing below the heading */
+}
+
+.container p {
+    font-size: 18px;  /* Adjust font size */
+    color: #666;  /* Text color */
+    margin-bottom: 30px;  /* Spacing below the paragraph */
+}
+
+
+/* Button Styling */
+.nav-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links ul li {
+    list-style: none;
+}
+
+.nav-links .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links .btn:hover {
+    background-color: #45a049;
+}
+
+/* About Section Styling */
+.about-section {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-info, .menu-links, .our-services {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.contact-info h3, .menu-links h3, .our-services h3 {
+    font-size: 18px;
+    color: #4CAF50;
+}
+
+.contact-info p, .menu-links ul li, .our-services ul li {
+    margin: 5px 0;
+}
+
+.menu-links ul, .our-services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-links a, .our-services a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-links a:hover, .our-services a:hover {
+    color: #4CAF50;
+}
+
+/* Social Media Icons */
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links .social-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.social-links img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+}
+
+body.login-page {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;  
+    display: flex;
+    justify-content: center;   
+    align-items: center;      
+    height: 100vh;             
+    margin: 0;
+}
+
+/* -------------------------- LOGIN PAGE STYLING -------------------------- */
+
+/* Centered login container - Specific to the login page */
+.login-container {
+    width: 100%;
+    max-width: 450px;          /* Maximum width of the login form */
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow around the container */
+}
+
+/* Heading for login page - Specific to the login page */
+.login-container h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input field styling - Specific to the login page */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.input-group input:focus {
+    border-color: #4CAF50;  /* Highlight field on focus */
+}
+
+/* Submit button styling - Specific to the login page */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Additional link for sign up - Specific to the login page */
+.signup-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.signup-link a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile responsiveness - Specific to the login page */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 20px;
+        max-width: 350px;
+    }
+
+    .login-container h2 {
+        font-size: 24px;
+    }
+
+    .input-group input, .btn {
+        padding: 10px;
+    }
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .navbar-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar .logo {
+        font-size: 20px;
+    }
+}
+
+/* Signup Form Styling */
+.signup-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.signup-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.signup-container label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+    display: block;
+    color: #333;
+}
+
+.signup-container input[type="text"], 
+.signup-container input[type="email"], 
+.signup-container input[type="password"], 
+.signup-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 18px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+}
+
+.signup-container input[type="text"]:focus, 
+.signup-container input[type="email"]:focus, 
+.signup-container input[type="password"]:focus, 
+.signup-container textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.signup-container textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.signup-container .terms {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.signup-container .terms input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.signup-container .terms label {
+    font-size: 14px;
+    color: #555;
+}
+
+.signup-container input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.signup-container input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.signup-container .already-member {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup-container .already-member a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-container .already-member a:hover {
+    text-decoration: underline;
+}
