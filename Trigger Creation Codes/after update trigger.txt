@@ -1,0 +1,11 @@
+DELIMITER $$
+
+CREATE TRIGGER after_update_payment
+AFTER UPDATE ON payments
+FOR EACH ROW
+BEGIN
+  INSERT INTO logs (action, user_id, log_time) 
+  VALUES ('Payment Updated', NEW.user_id, NOW());
+END$$
+
+DELIMITER ;

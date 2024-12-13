@@ -1,0 +1,11 @@
+DELIMITER $$
+
+CREATE TRIGGER after_delete_review
+AFTER DELETE ON reviews
+FOR EACH ROW
+BEGIN
+  INSERT INTO logs (action, user_id, log_time) 
+  VALUES ('Review Deleted', OLD.user_id, NOW());
+END$$
+
+DELIMITER ;

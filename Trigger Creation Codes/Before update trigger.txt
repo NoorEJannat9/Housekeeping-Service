@@ -1,0 +1,12 @@
+DELIMITER $$
+
+CREATE TRIGGER before_update_service
+BEFORE UPDATE ON services
+FOR EACH ROW
+BEGIN
+  IF NEW.price < 0 THEN
+    SET NEW.price = 0;
+  END IF;
+END$$
+
+DELIMITER ;
